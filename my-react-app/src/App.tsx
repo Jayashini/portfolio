@@ -1,68 +1,102 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import Certifications from './components/Certifications'
+import Navigation from './components/Navigation'
+import About from './components/About'
+import Projects from './components/Projects'
+import Leadership from './components/Leadership'
+import Skills from './components/Skills'
+import Project1 from './components/project1'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
+  )
+}
+
+function AppContent() {
+  const location = useLocation()
+  const showNavigation = location.pathname === '/'
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+      {showNavigation && <Navigation />}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/project/1" element={<Project1 />} />
+      </Routes>
+    </>
+  )
+}
+
+function HomePage() {
+  return (
+    <>
+      <section className="profile-section">
+        <img src="/profile.jpg" alt="Jayashini Jayaweera" className="profile-image" />
       </section>
 
-      <div className="ticks"></div>
+      <section id="center">
+      <div className="ticks">
+           
+        <div id="Home">  
+          <div className="container">
+            <div className="content">
+              <br />
+              <h1>Hi, I'm Jayashini Jayaweera </h1>
+              <br />
 
+              <p>This is my professional profile. I'm a passionate developer with expertise in React, TypeScript, and modern web technologies.</p>
+            </div>
+
+
+          </div>
+              <br />
+              <br />
+              <br />
+              <br />
+        </div>
+
+      </div>
+       </section>
+
+
+      <div id="about">
+<About />
+      </div>
+      
+            <section id="certifications">
+      <div className="ticks">
       <section id="next-steps">
         <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+          <h1>Certifications </h1>
+          <p>This is my certifications & Credentials </p>
+          <Certifications />        
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
+      </section>
+      </div>
+</section>
+
+      <Projects />
+
+      <Leadership />
+
+      <Skills />
+
+      
+      <section id="next-steps">
+      <div className="ticks">
+      <div id="social">
+          
+          <section id="connect">
+
+          <h1>Connect</h1>
+          <p>Connect with ....</p>
           <ul>
             <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
+              <a href="https://github.com/Jayashini" target="_blank">
                 <svg
                   className="button-icon"
                   role="presentation"
@@ -74,47 +108,23 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://chat.vite.dev/" target="_blank">
+              <a href="https://www.linkedin.com/in/jayashini-jayaweera/" target="_blank">
                 <svg
                   className="button-icon"
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#discord-icon"></use>
+                  <use href="/icons.svg#linkedin-icon"></use>
                 </svg>
-                Discord
+                LinkedIn
               </a>
             </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+            </ul>
+            </section>
         </div>
-      </section>
+        </div>
+        </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
     </>
   )
 }

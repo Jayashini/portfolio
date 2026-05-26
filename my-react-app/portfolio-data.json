@@ -1,0 +1,288 @@
+{
+  "portfolio": {
+    "personal": {
+      "name": "Jayashini Jayaweera",
+      "title": "Full-Stack Developer | Web Technologies Specialist",
+      "summary": "Passionate and dedicated developer with a strong foundation in web technologies. Expertise in React, TypeScript, and modern web development.",
+      "profileImage": "/profile.jpg",
+      "location": "University of Colombo School of Computing",
+      "generatedDate": "2026-05-13"
+    },
+    "social": {
+      "github": {
+        "url": "https://github.com/Jayashini",
+        "username": "Jayashini",
+        "platform": "GitHub"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/in/jayashini-jayaweera/",
+        "username": "jayashini-jayaweera",
+        "platform": "LinkedIn"
+      }
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "Colombo Sports E-Portal",
+        "category": "Sports Management System",
+        "description": "Developed a centralized platform to manage sports operations for the University of Colombo, covering scheduling, team/player management, registrations, and performance tracking.",
+        "status": "Completed",
+        "link": "https://example.com",
+        "technologies": [
+          "PHP",
+          "JavaScript",
+          "CSS",
+          "MySQL",
+          "HTML"
+        ],
+        "keyFeatures": [
+          "Centralized platform for sports operations",
+          "Team and player management",
+          "Registration system",
+          "Performance tracking",
+          "Event scheduling"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Portfolio Website",
+        "category": "Personal Branding",
+        "description": "A responsive portfolio website built with React and TypeScript, showcasing projects, skills, and professional experience.",
+        "status": "Completed",
+        "link": "https://example.com",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Vite",
+          "CSS3"
+        ],
+        "keyFeatures": [
+          "Modern, responsive design",
+          "Project showcase",
+          "Skills display",
+          "Leadership & volunteering timeline",
+          "Certifications section",
+          "Direct contact links",
+          "Smooth animations and transitions",
+          "Dark mode support"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": 1,
+        "category": "Frontend Development",
+        "skills": [
+          "React.js",
+          "TypeScript",
+          "JavaScript",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3"
+        ]
+      },
+      {
+        "id": 2,
+        "category": "Backend Development",
+        "skills": [
+          "Node.js",
+          "PHP"
+        ]
+      },
+      {
+        "id": 3,
+        "category": "Database & Storage",
+        "skills": [
+          "MySQL",
+          "MongoDB",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "id": 4,
+        "category": "Programming Languages",
+        "skills": [
+          "C++",
+          "C",
+          "Python"
+        ]
+      },
+      {
+        "id": 5,
+        "category": "DevOps & Tools",
+        "skills": [
+          "GitHub"
+        ]
+      },
+      {
+        "id": 6,
+        "category": "Design & UI/UX",
+        "skills": [
+          "Figma",
+          "Canva"
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "id": 1,
+        "title": "Understand Threats and Prevent Attacks",
+        "issuer": "Alison - CPD Certified",
+        "date": "2023",
+        "status": "Completed",
+        "link": "https://alison.com/verify/14a55ec425"
+      },
+      {
+        "id": 2,
+        "title": "Python for Beginners",
+        "issuer": "University of Moratuwa",
+        "date": "2023",
+        "status": "Completed",
+        "verificationCode": "fatF5QpMCT",
+        "link": "https://open.uom.lk/lms/mod/customcert/verify_certificate.php"
+      },
+      {
+        "id": 3,
+        "title": "Cyber Security & Data",
+        "issuer": "IBM SkillsBuild",
+        "date": "2026",
+        "status": "Completed",
+        "link": "https://skills.yourlearning.ibm.com/certificate/share/4f9ef581f2ewogICJsZWFybmVyQ05VTSIgOiAiNzcxODEwNlJFRyIsCiAgIm9iamVjdFR5cGUiIDogIkFDVElWSVRZIiwKICAib2JqZWN0SWQiIDogIkFMTS1DT1VSU0VfNDA1ODg3NiIKfQ8bdba320d5-10"
+      },
+      {
+        "id": 4,
+        "title": "Cyber Investigator: An Interactive Cybersecurity Experience",
+        "issuer": "IBM SkillsBuild",
+        "date": "2026",
+        "status": "Completed",
+        "link": "https://skills.yourlearning.ibm.com/certificate/PLAN-A273AA80C96E"
+      },
+      {
+        "id": 5,
+        "title": "Earned a Credential - Getting Started with Cybersecurity",
+        "issuer": "IBM SkillsBuild",
+        "date": "2026",
+        "status": "Completed",
+        "link": "https://skills.yourlearning.ibm.com/certificate/PLAN-C7EE7CC95370"
+      },
+      {
+        "id": 6,
+        "title": "[BETA] Subnetting Mastery",
+        "issuer": "Cisco Networking Academy",
+        "date": "2026",
+        "status": "In Progress"
+      }
+    ],
+    "leadership": [
+      {
+        "id": 1,
+        "title": "Assistant Secretary",
+        "organization": "Rotaract Club of University of Colombo School of Computing",
+        "period": "July 2025 - Present",
+        "color": "blue",
+        "description": "Management and coordination of club activities"
+      },
+      {
+        "id": 2,
+        "title": "Faculty Coordinator - UCSC",
+        "organization": "Leo Club of University of Colombo",
+        "period": "July 2025 - Present",
+        "color": "purple",
+        "description": "Faculty coordination and program management"
+      },
+      {
+        "id": 3,
+        "title": "Member of Publicity Team",
+        "organization": "CSSL GenZ Chapter of UCSC",
+        "period": "2025 - 2026",
+        "color": "green",
+        "description": "Publicity and marketing activities"
+      },
+      {
+        "id": 4,
+        "title": "Member of Content Team",
+        "organization": "ACM Student Chapter of UCSC",
+        "period": "2024 - Present",
+        "color": "cyan",
+        "description": "Content creation and management"
+      },
+      {
+        "id": 5,
+        "title": "Member",
+        "organization": "Rotaract Club of University of Colombo School of Computing",
+        "period": "2024 - Present",
+        "color": "orange",
+        "description": "Active member participating in various initiatives"
+      }
+    ],
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "#center",
+        "id": "nav-home"
+      },
+      {
+        "label": "About",
+        "href": "#about",
+        "id": "nav-about"
+      },
+      {
+        "label": "Projects",
+        "href": "#projects",
+        "id": "nav-projects"
+      },
+      {
+        "label": "Leadership",
+        "href": "#leadership",
+        "id": "nav-leadership"
+      },
+      {
+        "label": "Skills",
+        "href": "#skills",
+        "id": "nav-skills"
+      },
+      {
+        "label": "Certifications",
+        "href": "#certifications",
+        "id": "nav-certifications"
+      },
+      {
+        "label": "Connect",
+        "href": "#connect",
+        "id": "nav-connect"
+      }
+    ],
+    "portfolio": {
+      "title": "Jayashini Jayaweera - Professional Portfolio",
+      "url": "http://localhost:5174",
+      "version": "1.0",
+      "launchDate": "2026-05-13",
+      "framework": "React 18+",
+      "language": "TypeScript",
+      "buildTool": "Vite",
+      "styling": "CSS3 with CSS Variables",
+      "features": [
+        "Responsive Design",
+        "Dark Mode Support",
+        "Smooth Animations",
+        "Sticky Navigation",
+        "Timeline Component",
+        "Grid Layouts",
+        "Project Showcase",
+        "Certificate Verification Links"
+      ]
+    },
+    "statistics": {
+      "totalProjects": 2,
+      "completedProjects": 2,
+      "inProgressProjects": 0,
+      "totalCertifications": 6,
+      "completedCertifications": 5,
+      "inProgressCertifications": 1,
+      "skillCategories": 6,
+      "totalSkills": 27,
+      "leadershipRoles": 5,
+      "socialProfiles": 2
+    }
+  }
+}

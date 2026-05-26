@@ -72,7 +72,6 @@
 
 #next-steps {
   display: flex;
-  border-top: 1px solid var(--border);
   text-align: left;
 
   & > div {
@@ -85,8 +84,8 @@
 
   .icon {
     margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
   }
 
   @media (max-width: 1024px) {
@@ -95,16 +94,125 @@
   }
 }
 
-#docs {
-  border-right: 1px solid var(--border);
+#about {
+  padding: 32px;
+  text-align: center;
 
   @media (max-width: 1024px) {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
+    padding: 24px 20px;
   }
 }
 
-#next-steps ul {
+#certifications {
+  display: flex;
+  text-align: left;
+
+  & > div {
+    flex: 1 1 0;
+    padding: 32px;
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#connect {
+  padding: 32px;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 25px;
+    height: 25px;
+  }
+
+  h2 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+  }
+
+  > p {
+    margin: 0 0 24px;
+    opacity: 0.8;
+  }
+}
+
+#docs {
+  
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    align-items: center;
+  }
+}
+
+.container {
+  display: flex;
+ 
+  align-items: center;
+  margin-top: 1.5rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.content {
+  flex: 1;
+  text-align: Center;
+
+  p {
+    margin-left: 1.5rem;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+}
+
+.image {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-left: 1rem;
+
+  img {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid var(--accent);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 1024px) {
+    img {
+      max-width: 250px;
+    }
+  }
+}
+
+#next-steps ul,
+#connect ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -131,7 +239,7 @@
       box-shadow: var(--shadow);
     }
     .button-icon {
-      height: 18px;
+      height: 14px;
       width: 18px;
     }
   }
@@ -143,6 +251,7 @@
 
     li {
       flex: 1 1 calc(50% - 8px);
+      align-items: center;
     }
 
     a {
@@ -155,7 +264,6 @@
 
 #spacer {
   height: 88px;
-  border-top: 1px solid var(--border);
   @media (max-width: 1024px) {
     height: 48px;
   }
@@ -175,10 +283,106 @@
 
   &::before {
     left: 0;
-    border-left-color: var(--border);
   }
   &::after {
     right: 0;
-    border-right-color: var(--border);
   }
+}
+
+#social {
+  padding: 32px;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 25px;
+    height: 25px;
+  }
+
+  h2 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+  }
+
+  > p {
+    margin: 0 0 24px;
+    opacity: 0.8;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    justify-content: center;
+
+    li {
+      display: flex;
+    }
+
+    a {
+      color: var(--text-h);
+      font-size: 16px;
+      border-radius: 6px;
+      background: var(--social-bg);
+      display: flex;
+      padding: 6px 12px;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: box-shadow 0.3s;
+
+      &:hover {
+        box-shadow: var(--shadow);
+      }
+
+      .button-icon {
+        height: 14px;
+        width: 14px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+
+      li {
+        flex: 1 1 calc(50% - 8px);
+      }
+
+      a {
+        width: 100%;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 20px;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    padding: 24px 20px;
+  }
+}
+
+.profile-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 3px solid var(--accent);
 }
