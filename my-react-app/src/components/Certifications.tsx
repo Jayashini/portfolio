@@ -1,4 +1,4 @@
-import './Certifications.css'
+import '../assets/css/Certifications.css'
 
 interface Certification {
   id: number

@@ -1,12 +1,13 @@
 import { useNavigate } from 'react-router-dom'
-import './Projects.css'
+import '../assets/css/Projects.css'
+import p1Image from '../assets/img/p1.1.png'
 
 interface Project {
   id: number
   title: string
   category: string
   description: string
-  technologies: string[]
+  
   link: string
   image?: string
   status?: 'Completed' | 'In Progress' | 'Planned'
@@ -21,7 +22,7 @@ function Projects() {
       title: "Colombo Sports E-Portal",
       category: "Sports Management System",
       description: "Developed a centralized platform to manage sports operations for the University of Colombo, covering scheduling, team/player management, registrations, and performance tracking. ",
-      technologies: ["PHP", "Javascript", "CSS", "MYSQL", "HTML"],
+      image: p1Image,
       link: "https://example.com",
       status: "Completed"
     },
@@ -30,7 +31,16 @@ function Projects() {
       title: "Portfolio Website",
       category: "Personal Branding",
       description: "A responsive portfolio website built with React and TypeScript, showcasing projects, skills, and professional experience.",
-      technologies: ["React", "TypeScript", "Vite", "CSS3"],
+      image: p1Image,
+      link: "https://example.com",
+      status: "Completed"
+    },
+    {
+      id: 3,
+      title: "Portfolio Website",
+      category: "Personal Branding",
+      description: "A responsive portfolio website built with React and TypeScript, showcasing projects, skills, and professional experience.",
+      image: p1Image,
       link: "https://example.com",
       status: "Completed"
     },
@@ -43,6 +53,9 @@ function Projects() {
 
   return (
     <section id="projects">
+
+      <br/>
+
       <h2>Projects</h2>
       <p>Check my recent work and projects</p>
       <div className="projects-grid">
@@ -53,7 +66,9 @@ function Projects() {
                 {project.status}
               </span>
             )}
-            
+            <br />
+            <br />
+            <br />
             <div className="project-header">
               {project.image && (
                 <img src={project.image} alt={project.title} className="project-image" />
@@ -64,15 +79,7 @@ function Projects() {
               <h3>{project.title}</h3>
               <p className="category">{project.category}</p>
               <p className="description">{project.description}</p>
-
-              <div className="technologies">
-                {project.technologies.slice(0, 3).map((tech, index) => (
-                  <span key={index} className="tech-tag">{tech}</span>
-                ))}
-                {project.technologies.length > 3 && (
-                  <span className="tech-tag more">+{project.technologies.length - 3} more</span>
-                )}
-              </div>
+               <br />
 
               <button 
                 className="view-project"

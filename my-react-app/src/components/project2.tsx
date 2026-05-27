@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import p1Image from '../assets/img/p1.1.png'
 import '../assets/css/project.css'
 
-function Project1() {
+function Project2() {
   const navigate = useNavigate()
 
   const handleBackToProjects = () => {
@@ -81,17 +81,14 @@ function Project1() {
                   <li>Performance tracking and analytics</li>
                   <li>User authentication and authorization</li>
                   <li>Responsive design for all devices</li>
+                  <li>Registration and booking system</li>
+                  <li>Performance tracking and analytics</li>
+                  <li>User authentication and authorization</li>
+                  <li>Responsive design for all devices</li>
                 </ul>
               </div>
 
-              <div className="detail-section">
-                <h2>Project Details</h2>
-                <p>
-                  This project was built to streamline the management of sports activities at the University of Colombo. 
-                  It provides a comprehensive solution for administrators to manage schedules, teams, and player information 
-                  efficiently. The system also allows students to register for sports events and track their performance.
-                </p>
-              </div>
+              
             </div>
           </div>
           
@@ -103,4 +100,4 @@ function Project1() {
   )
 }
 
-export default Project1
+export default Project2

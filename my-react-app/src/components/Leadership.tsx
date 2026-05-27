@@ -1,4 +1,4 @@
-import './Leadership.css'
+import '../assets/css/Leadership.css'
 
 interface LeadershipRole {
   id: number

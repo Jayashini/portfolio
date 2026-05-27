@@ -1,0 +1,393 @@
+#skills {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(10, 10, 20, 0.5) 0%, rgba(20, 10, 30, 0.5) 100%);
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-h);
+  background: linear-gradient(135deg, #00d4ff 0%, #0099ff 50%, #6d28d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700px;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skill-section {
+  animation: slideUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.skill-section:nth-child(1) { animation-delay: 0.1s; }
+.skill-section:nth-child(2) { animation-delay: 0.2s; }
+.skill-section:nth-child(3) { animation-delay: 0.3s; }
+.skill-section:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00d4ff;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  text-align: left;
+}
+
+.skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 2px solid;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.skill-badge:hover::before {
+  left: 100%;
+}
+
+.skill-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px currentColor;
+}
+
+/* Cyan Colors */
+.color-astro {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+  color: #00d4ff;
+  border-color: #00d4ff;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+}
+
+.color-astro:hover {
+  background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+  color: #0d1b2a;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.color-css {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+  color: #00d9ff;
+  border-color: #0099ff;
+  box-shadow: 0 0 10px rgba(0, 153, 255, 0.2);
+}
+
+.color-css:hover {
+  background: linear-gradient(135deg, #0099ff 0%, #00d9ff 100%);
+  color: #0f3460;
+}
+
+.color-html {
+  background: linear-gradient(135deg, #2d1b1b 0%, #4d2323 100%);
+  color: #ff6b35;
+  border-color: #ff6b35;
+  box-shadow: 0 0 10px rgba(255, 107, 53, 0.2);
+}
+
+.color-html:hover {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: #2d1b1b;
+}
+
+/* JavaScript Yellow/Gold */
+.color-js {
+  background: linear-gradient(135deg, #2d2416 0%, #4d3d1f 100%);
+  color: #ffd700;
+  border-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.color-js:hover {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #2d2416;
+}
+
+/* Nuxt Green */
+.color-nuxt {
+  background: linear-gradient(135deg, #1a2e1a 0%, #2d4d2d 100%);
+  color: #00ff88;
+  border-color: #00ff88;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+}
+
+.color-nuxt:hover {
+  background: linear-gradient(135deg, #00ff88 0%, #00ff99 100%);
+  color: #1a2e1a;
+}
+
+/* PHP Purple */
+.color-php {
+  background: linear-gradient(135deg, #2d1a3d 0%, #4d2d6d 100%);
+  color: #b794f6;
+  border-color: #b794f6;
+  box-shadow: 0 0 10px rgba(183, 148, 246, 0.2);
+}
+
+.color-php:hover {
+  background: linear-gradient(135deg, #b794f6 0%, #d4a5ff 100%);
+  color: #2d1a3d;
+}
+
+/* Svelte Red */
+.color-svelte {
+  background: linear-gradient(135deg, #3d1a1a 0%, #6d2d2d 100%);
+  color: #ff3b00;
+  border-color: #ff3b00;
+  box-shadow: 0 0 10px rgba(255, 59, 0, 0.2);
+}
+
+.color-svelte:hover {
+  background: linear-gradient(135deg, #ff3b00 0%, #ff5c28 100%);
+  color: #3d1a1a;
+}
+
+/* Tailwind Blue */
+.color-tailwind {
+  background: linear-gradient(135deg, #1a2e3d 0%, #2d4d6d 100%);
+  color: #38b6ff;
+  border-color: #38b6ff;
+  box-shadow: 0 0 10px rgba(56, 182, 255, 0.2);
+}
+
+.color-tailwind:hover {
+  background: linear-gradient(135deg, #38b6ff 0%, #5cc9ff 100%);
+  color: #1a2e3d;
+}
+
+/* Vue Green */
+.color-vue {
+  background: linear-gradient(135deg, #1a2a1a 0%, #2d4d2d 100%);
+  color: #42d392;
+  border-color: #42d392;
+  box-shadow: 0 0 10px rgba(66, 211, 146, 0.2);
+}
+
+.color-vue:hover {
+  background: linear-gradient(135deg, #42d392 0%, #5ae3a8 100%);
+  color: #1a2a1a;
+}
+
+/* TypeScript */
+.color-ts {
+  background: linear-gradient(135deg, #1a2d3d 0%, #2d4d6d 100%);
+  color: #3178c6;
+  border-color: #3178c6;
+  box-shadow: 0 0 10px rgba(49, 120, 198, 0.2);
+}
+
+.color-ts:hover {
+  background: linear-gradient(135deg, #3178c6 0%, #5a9ce6 100%);
+  color: #1a2d3d;
+}
+
+/* Google Maps */
+.color-maps {
+  background: linear-gradient(135deg, #2a2a1a 0%, #4d4d2d 100%);
+  color: #34a853;
+  border-color: #34a853;
+  box-shadow: 0 0 10px rgba(52, 168, 83, 0.2);
+}
+
+.color-maps:hover {
+  background: linear-gradient(135deg, #34a853 0%, #57bb76 100%);
+  color: #2a2a1a;
+}
+
+/* React Cyan */
+.color-react {
+  background: linear-gradient(135deg, #1a2d3d 0%, #2d4d6d 100%);
+  color: #61dafb;
+  border-color: #61dafb;
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.2);
+}
+
+.color-react:hover {
+  background: linear-gradient(135deg, #61dafb 0%, #88eaff 100%);
+  color: #1a2d3d;
+}
+
+/* SASS Pink */
+.color-sass {
+  background: linear-gradient(135deg, #3d1a2d 0%, #6d2d4d 100%);
+  color: #ff1493;
+  border-color: #ff1493;
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.2);
+}
+
+.color-sass:hover {
+  background: linear-gradient(135deg, #ff1493 0%, #ff4d7d 100%);
+  color: #3d1a2d;
+}
+
+/* SvelteKit */
+.color-sveltekit {
+  background: linear-gradient(135deg, #2d1a1a 0%, #5d2d2d 100%);
+  color: #ff6b35;
+  border-color: #ff6b35;
+  box-shadow: 0 0 10px rgba(255, 107, 53, 0.2);
+}
+
+.color-sveltekit:hover {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: #2d1a1a;
+}
+
+/* Appwrite Magenta */
+.color-appwrite {
+  background: linear-gradient(135deg, #3d1a3d 0%, #6d2d6d 100%);
+  color: #ff00ff;
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.color-appwrite:hover {
+  background: linear-gradient(135deg, #ff00ff 0%, #ff33ff 100%);
+  color: #3d1a3d;
+}
+
+/* Express Yellow */
+.color-express {
+  background: linear-gradient(135deg, #2d2416 0%, #5d4d2d 100%);
+  color: #ffeb3b;
+  border-color: #ffeb3b;
+  box-shadow: 0 0 10px rgba(255, 235, 59, 0.2);
+}
+
+.color-express:hover {
+  background: linear-gradient(135deg, #ffeb3b 0%, #ffff5e 100%);
+  color: #2d2416;
+}
+
+/* Fastify Orange */
+.color-fastify {
+  background: linear-gradient(135deg, #3d2216 0%, #6d3d1f 100%);
+  color: #ffb700;
+  border-color: #ffb700;
+  box-shadow: 0 0 10px rgba(255, 183, 0, 0.2);
+}
+
+.color-fastify:hover {
+  background: linear-gradient(135deg, #ffb700 0%, #ffd24d 100%);
+  color: #3d2216;
+}
+
+/* Lucia Purple */
+.color-lucia {
+  background: linear-gradient(135deg, #2d1a3d 0%, #4d2d6d 100%);
+  color: #b794f6;
+  border-color: #b794f6;
+  box-shadow: 0 0 10px rgba(183, 148, 246, 0.2);
+}
+
+.color-lucia:hover {
+  background: linear-gradient(135deg, #b794f6 0%, #d4a5ff 100%);
+  color: #2d1a3d;
+}
+
+/* Node.js Green */
+.color-nodejs {
+  background: linear-gradient(135deg, #1a2e1a 0%, #2d4d2d 100%);
+  color: #68a063;
+  border-color: #68a063;
+  box-shadow: 0 0 10px rgba(104, 160, 99, 0.2);
+}
+
+.color-nodejs:hover {
+  background: linear-gradient(135deg, #68a063 0%, #8bc34a 100%);
+  color: #1a2e1a;
+}
+
+/* Prisma Blue */
+.color-prisma {
+  background: linear-gradient(135deg, #1a1a3d 0%, #2d2d6d 100%);
+  color: #0a9396;
+  border-color: #0a9396;
+  box-shadow: 0 0 10px rgba(10, 147, 150, 0.2);
+}
+
+.color-prisma:hover {
+  background: linear-gradient(135deg, #0a9396 0%, #2db8bc 100%);
+  color: #1a1a3d;
+}
+
+@media (max-width: 768px) {
+  #skills {
+    padding: 3rem 1.5rem;
+  }
+
+  #skills h2 {
+    font-size: 2rem;
+  }
+
+  .skills-badges {
+    gap: 0.6rem;
+  }
+
+  .skill-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .skill-card {
+    background: rgba(47, 48, 58, 0.7);
+    border-color: rgba(192, 132, 252, 0.1);
+  }
+
+  .skill-tag {
+
+    border-color: rgba(192, 132, 252, 0.2);
+  }
+
+  .skill-tag:hover {
+    background: rgba(192, 132, 252, 0.2);
+  }
+}

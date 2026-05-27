@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Leadership from './components/Leadership'
 import Skills from './components/Skills'
 import Project1 from './components/project1'
+import Project2 from './components/project2'
 import './App.css'
 
 function App() {
@@ -26,6 +27,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/project/1" element={<Project1 />} />
+        <Route path="/project/2" element={<Project2 />} />
       </Routes>
     </>
   )
@@ -34,37 +36,37 @@ function AppContent() {
 function HomePage() {
   return (
     <>
-      <section className="profile-section">
-        <img src="/profile.jpg" alt="Jayashini Jayaweera" className="profile-image" />
-      </section>
+      
 
       <section id="center">
       <div className="ticks">
            
-        <div id="Home">  
+        <div id="Home"> 
+              <br />
+              <br /> 
+          <section className="profile-section">
+             <img src="/profile.jpg" alt="Jayashini Jayaweera" className="profile-image" />
+          </section>
+
           <div className="container">
             <div className="content">
               <br />
               <h1>Hi, I'm Jayashini Jayaweera </h1>
               <br />
-
               <p>This is my professional profile. I'm a passionate developer with expertise in React, TypeScript, and modern web technologies.</p>
             </div>
-
-
           </div>
-              <br />
-              <br />
-              <br />
-              <br />
-        </div>
 
-      </div>
+              <br />
+              <br />
+
+        </div>
+        </div>
        </section>
 
 
       <div id="about">
-<About />
+        <About />
       </div>
       
             <section id="certifications">
