@@ -5,8 +5,10 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Leadership from './components/Leadership'
 import Skills from './components/Skills'
+import Footer from './components/Footer'
 import Project1 from './components/project1'
 import Project2 from './components/project2'
+import resumePDF from './assets/resume/Jayashini.pdf'
 import './App.css'
 
 function App() {
@@ -68,6 +70,8 @@ function HomePage() {
       <div id="about">
         <About />
       </div>
+
+            <Leadership />
       
             <section id="certifications">
       <div className="ticks">
@@ -83,8 +87,6 @@ function HomePage() {
 
       <Projects />
 
-      <Leadership />
-
       <Skills />
 
       
@@ -93,40 +95,44 @@ function HomePage() {
       <div id="social">
           
           <section id="connect">
-
           <h1>Connect</h1>
-          <p>Connect with ....</p>
+          <p>Connect with me or download my resume</p>
           <ul>
             <li>
-              <a href="https://github.com/Jayashini" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+              <a href="https://github.com/Jayashini" target="_blank" rel="noopener noreferrer">
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#github-icon"></use>
                 </svg>
                 GitHub
               </a>
             </li>
+
             <li>
-              <a href="https://www.linkedin.com/in/jayashini-jayaweera/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+              <a href="https://www.linkedin.com/in/jayashini-jayaweera/" target="_blank" rel="noopener noreferrer">
+                <svg className="button-icon" role="presentation" aria-hidden="true" >
                   <use href="/icons.svg#linkedin-icon"></use>
                 </svg>
                 LinkedIn
               </a>
             </li>
             </ul>
+            
+            <div className="resume-section">
+             
+              <a href={resumePDF} download="Jayashini_Jayaweera_Resume.pdf" className="resume-button">
+                Download My Resume
+              </a>
+            </div>
             </section>
+
+
+
         </div>
         </div>
         </section>
+  <Footer />
 
+    
     </>
   )
 }

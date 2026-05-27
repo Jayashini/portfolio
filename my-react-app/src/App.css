@@ -97,6 +97,8 @@
 #about {
   padding: 32px;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @media (max-width: 1024px) {
     padding: 24px 20px;
@@ -106,6 +108,8 @@
 #certifications {
   display: flex;
   text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
 
   & > div {
     flex: 1 1 0;
@@ -130,6 +134,8 @@
 #connect {
   padding: 32px;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @media (max-width: 1024px) {
     padding: 24px 20px;
@@ -262,6 +268,41 @@
   }
 }
 
+.resume-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(170, 59, 255, 0.2);
+}
+
+.resume-section h3 {
+  font-size: 1.2rem;
+  color: var(--text-h);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(107, 40, 217, 0.1) 100%);
+  color: #00d4ff;
+  border: 2px solid #00d4ff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+  cursor: pointer;
+}
+
+.resume-button:hover {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(107, 40, 217, 0.2) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.4);
+  color: #88eaff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
 #spacer {
   height: 88px;
   @media (max-width: 1024px) {
@@ -371,7 +412,7 @@
   justify-content: center;
   align-items: center;
   padding: 32px 20px;
-  width: 100%;
+  width: 1200px;
 
   @media (max-width: 1024px) {
     padding: 24px 20px;
@@ -380,9 +421,46 @@
 
 .profile-image {
   max-width: 200px;
-  width: 100%;
+  width: 80%;
   height: auto;
-  border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  border: 3px solid var(--accent);
+  aspect-ratio: 1;
+  object-fit: cover;
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.15),
+    0 0 20px rgba(0, 212, 255, 0.3),
+    inset 0 0 20px rgba(0, 212, 255, 0.1);
+  border: 2px solid #00d4ff;
+  transition: all 0.3s ease;
+  animation: hexagonGlow 3s ease-in-out infinite;
+}
+
+.profile-image:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 
+    0 12px 32px rgba(0, 0, 0, 0.25),
+    0 0 30px rgba(0, 212, 255, 0.5),
+    inset 0 0 30px rgba(0, 212, 255, 0.2);
+}
+
+@keyframes hexagonGlow {
+  0%, 100% {
+    box-shadow: 
+      0 8px 24px rgba(0, 0, 0, 0.15),
+      0 0 20px rgba(0, 212, 255, 0.3),
+      inset 0 0 20px rgba(0, 212, 255, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 8px 24px rgba(0, 0, 0, 0.15),
+      0 0 30px rgba(0, 212, 255, 0.5),
+      inset 0 0 30px rgba(0, 212, 255, 0.2);
+  }
 }
