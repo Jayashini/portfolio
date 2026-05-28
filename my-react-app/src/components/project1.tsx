@@ -39,8 +39,8 @@ function Project1() {
           <div className="detail-section">
             <h2>Project Overview</h2>
             <p>
-              Developed a centralized platform to manage sports operations for the University of Colombo, 
-              covering scheduling, team/player management, registrations, and performance tracking.
+              Developed a centralized platform to manage sports operations for the University of Colombo Physical Education Department.
+              The sytem includes 7 main user roles: students, coach, equipment manager, sport's manager, captain, public user and admin.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ function Project1() {
             {/* Left side - Gallery */}
             <div className="gallery-section">
               <div className="detail-section">
-                <h2>Project Gallery</h2>
+                <h2>Gallery</h2>
                 <div className="image-gallery">
                   <div className="gallery-item">
                     <img src={p1Imagehome} alt="Home View" />
@@ -60,7 +60,7 @@ function Project1() {
                   <div className="gallery-item">
                     <img src={p1Imageeqs} alt="sports" />
                   </div>
-                                    <div className="gallery-item">
+                  <div className="gallery-item">
                     <img src={p1Imageeqrr} alt="requests" />
                   </div>
                   <div className="gallery-item">
@@ -91,23 +91,38 @@ function Project1() {
               <div className="detail-section">
                 <h2>Key Features</h2>
                 <ul className="features-list">
-                  <li>Centralized sports operations management</li>
-                  <li>Team and player management system</li>
-                  <li>Registration and booking system</li>
-                  <li>Performance tracking and analytics</li>
-                  <li>User authentication and authorization</li>
-                  <li>Responsive design for all devices</li>
+                  <li>User Privilege Management - Admins will be able to manage roles and access levels, ensuring only authorized users can perform sensitive actions like bookings, equipment changes, and budget handling.</li>
+                  <li>Equipment Management - Admin can add, update, and monitor the inventory. Equipment Manager can track availability, assign equipment to users, and view borrowing history. </li>
+                  <li>Facility Booking - Both internal and external users can request bookings for sports grounds or indoor facilities. External users will be required to make payments through the system. </li>
+                  
+                  <li>Practice Scheduling - Sports captains and managers can schedule regular and extra practice sessions. This ensures organized usage of grounds and avoids conflicts. </li>
+                  <li>Sports Records - The system maintains individual profiles of players, tracking their participation, achievements, and performance stats. </li>
+                  <li>Team Management - Captains can add team members, manage rosters, and communicate with players.</li>
+                  <li>Attendance Marking - Attendance for practices can be marked digitally by captains to help track participation.</li>
+                  <li>Injury Reporting & Substitutions - Coaches can report player injuries and suggest suitable replacements, improving safety and game readiness. </li>
+                  
+                  <li>Sports Manager Assignment - Specific sports managers assigned for particular games, ensuring accountability. </li>
+                  <li>Budget Management - Admins can allocate budgets per sport and sport manager upload related proof documents to maintain financial transparency. </li>
+                  <li>Identity Verification - Equipment managers can verify users when borrowing items , the users who are already enrolled in the system. </li>
+                  <li>Newsfeed & Events - Admins and managers can post announcements, events, and updates for all users to view.</li>
+                  
+                  <li>Profiles & Feedback - All users can manage their own profile information and provide feedback or inquiries to the PE Department.</li>
+                  
+                  
+
                 </ul>
               </div>
 
+              {/* Project Details section - Provides comprehensive overview of the project, its purpose, and implementation
               <div className="detail-section">
                 <h2>Project Details</h2>
                 <p>
-                  This project was built to streamline the management of sports activities at the University of Colombo. 
+                  This project was built to streamline the management of sports activities at the University of Colombo Physical Education Department. 
                   It provides a comprehensive solution for administrators to manage schedules, teams, and player information 
                   efficiently. The system also allows students to register for sports events and track their performance.
                 </p>
               </div>
+               */}
             </div>
           </div>
           
