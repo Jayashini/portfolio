@@ -1,5 +1,13 @@
 import { useNavigate } from 'react-router-dom'
-import p1Image from '../assets/img/p1.1.png'
+import p1Imageeqrr from '../assets/img/p1.eqrr.png'
+import p1Imageeq from '../assets/img/p1.eq.jpeg'
+import p1Imageeqe from '../assets/img/p1.eqe.png'
+import p1Imageeqr from '../assets/img/p1.eqr.png'
+import p1Imageeqs from '../assets/img/p1.eqs.png'
+import p1Imagehome from '../assets/img/p1.home.png'
+import p1Imagesp from '../assets/img/p1.sp.jpeg'
+import p1Imagespp from '../assets/img/p1.spp.png'
+import p1Imagespc from '../assets/img/p1.spc.png'
 import '../assets/css/project.css'
 
 function Project1() {
@@ -43,29 +51,37 @@ function Project1() {
                 <h2>Project Gallery</h2>
                 <div className="image-gallery">
                   <div className="gallery-item">
-                    <img src={p1Image} alt="Dashboard View" />
+                    <img src={p1Imagehome} alt="Home View" />
+                  </div>
+
+                  <div className="gallery-item">
+                    <img src={p1Imageeq} alt="eq manager dash board" />
                   </div>
                   <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Team+Management" alt="Team Management" />
+                    <img src={p1Imageeqs} alt="sports" />
+                  </div>
+                                    <div className="gallery-item">
+                    <img src={p1Imageeqrr} alt="requests" />
                   </div>
                   <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Scheduling" alt="Scheduling System" />
+                    <img src={p1Imageeqe} alt="Equalizer Edit View" />
+                  </div>
+
+                  <div className="gallery-item">
+                    <img src={p1Imageeqr} alt="Equalizer Results View" />
+                  </div>
+
+
+                  <div className="gallery-item">
+                    <img src={p1Imagesp} alt="Sports Profile" />
                   </div>
                   <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Registration" alt="Registration Form" />
+                    <img src={p1Imagespp} alt="Sports Profile" />
                   </div>
                   <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Analytics" alt="Performance Analytics" />
+                    <img src={p1Imagespc} alt="Sports Profile" />
                   </div>
-                  <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Reports" alt="Reports" />
-                  </div>
-                  <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Mobile+View" alt="Mobile View" />
-                  </div>
-                  <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=User+Profile" alt="User Profile" />
-                  </div>
+                  
                 </div>
               </div>
             </div>

@@ -100,7 +100,7 @@
 
 .project-header {
   height: 180px;
-
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,10 +108,11 @@
 }
 
 .project-image {
-  width: 80%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   margin: 1rem;
-  min-height: 200px;
+
+  padding: 0.5rem;
 }
 
 .project-content {

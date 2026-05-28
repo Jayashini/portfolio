@@ -16,36 +16,39 @@ function Skills() {
     {
       title: "Languages",
       skills: [
-        { name: "CSS", color: "color-css" },
-        { name: "HTML", color: "color-html" },
-        { name: "JavaScript", color: "color-js" },
         { name: "PHP", color: "color-php" },
-        { name: "TypeScript", color: "color-ts" }
+        { name: "JavaScript", color: "color-js" },
+        { name: "TypeScript", color: "color-ts" },
+        { name: "Python", color: "color-python" },
+        { name: "C/C++", color: "color-cpp" }
       ]
     },
     {
       title: "Frontend",
       skills: [
-        { name: "Astro", color: "color-astro" },
-        { name: "Google Maps", color: "color-maps" },
-        { name: "Nuxt", color: "color-nuxt" },
-        { name: "React", color: "color-react" },
-        { name: "SASS", color: "color-sass" },
-        { name: "Svelte", color: "color-svelte" },
-        { name: "SvelteKit", color: "color-sveltekit" },
-        { name: "Tailwind CSS", color: "color-tailwind" },
-        { name: "Vue", color: "color-vue" }
+        { name: "React.js", color: "color-react" },
+        { name: "Tailwind CSS", color: "color-tailwind" }
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "Appwrite", color: "color-appwrite" },
-        { name: "Express", color: "color-express" },
-        { name: "Fastify", color: "color-fastify" },
-        { name: "Lucia", color: "color-lucia" },
-        { name: "Node.js", color: "color-nodejs" },
-        { name: "Prisma", color: "color-prisma" }
+        { name: "Node.js", color: "color-nodejs" }
+      ]
+    },
+    {
+      title: "Databases",
+      skills: [
+        { name: "MySQL", color: "color-mysql" },
+        { name: "MongoDB", color: "color-mongodb" }
+      ]
+    },
+    {
+      title: "Tools",
+      skills: [
+        { name: "Git", color: "color-git" },
+        { name: "Linux", color: "color-linux" },
+        { name: "Figma", color: "color-figma" }
       ]
     }
   ]

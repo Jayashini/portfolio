@@ -55,7 +55,7 @@ function HomePage() {
               <br />
               <h1>Hi, I'm Jayashini Jayaweera </h1>
               <br />
-              <p>This is my professional profile. I'm a passionate developer with expertise in React, TypeScript, and modern web technologies.</p>
+              <p>This is my portfolio to get to know about me. Currently, I'm a third-year Information Systems Undergraduate at University of Colombo School of Computing.</p>
             </div>
           </div>
 

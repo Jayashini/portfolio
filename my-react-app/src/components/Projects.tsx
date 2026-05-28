@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import '../assets/css/Projects.css'
-import p1Image from '../assets/img/p1.1.png'
+import p1Image from '../assets/img/p1.png'
 
 interface Project {
   id: number

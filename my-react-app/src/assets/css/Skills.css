@@ -7,11 +7,8 @@
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--text-h);
-  background: linear-gradient(135deg, #00d4ff 0%, #0099ff 50%, #6d28d9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #00d4ff;
+  
   font-weight: 700px;
 }
 
@@ -355,6 +352,97 @@
 .color-prisma:hover {
   background: linear-gradient(135deg, #0a9396 0%, #2db8bc 100%);
   color: #1a1a3d;
+}
+
+/* Python Blue-Yellow */
+.color-python {
+  background: linear-gradient(135deg, #1a2a3d 0%, #2d4d5d 100%);
+  color: #3776ab;
+  border-color: #3776ab;
+  box-shadow: 0 0 10px rgba(55, 118, 171, 0.2);
+}
+
+.color-python:hover {
+  background: linear-gradient(135deg, #3776ab 0%, #4d96d9 100%);
+  color: #1a2a3d;
+}
+
+/* C/C++ Blue */
+.color-cpp {
+  background: linear-gradient(135deg, #1a2d3d 0%, #2d4d6d 100%);
+  color: #00599c;
+  border-color: #00599c;
+  box-shadow: 0 0 10px rgba(0, 89, 156, 0.2);
+}
+
+.color-cpp:hover {
+  background: linear-gradient(135deg, #00599c 0%, #0080d0 100%);
+  color: #1a2d3d;
+}
+
+/* MySQL Orange-Blue */
+.color-mysql {
+  background: linear-gradient(135deg, #2d2016 0%, #4d3d2d 100%);
+  color: #00758f;
+  border-color: #00758f;
+  box-shadow: 0 0 10px rgba(0, 117, 143, 0.2);
+}
+
+.color-mysql:hover {
+  background: linear-gradient(135deg, #00758f 0%, #00a4cc 100%);
+  color: #2d2016;
+}
+
+/* MongoDB Green */
+.color-mongodb {
+  background: linear-gradient(135deg, #1a2e1a 0%, #2d4d2d 100%);
+  color: #13aa52;
+  border-color: #13aa52;
+  box-shadow: 0 0 10px rgba(19, 170, 82, 0.2);
+}
+
+.color-mongodb:hover {
+  background: linear-gradient(135deg, #13aa52 0%, #1fcc5f 100%);
+  color: #1a2e1a;
+}
+
+/* Git Orange-Red */
+.color-git {
+  background: linear-gradient(135deg, #3d1a1a 0%, #5d2d1a 100%);
+  color: #f1502f;
+  border-color: #f1502f;
+  box-shadow: 0 0 10px rgba(241, 80, 47, 0.2);
+}
+
+.color-git:hover {
+  background: linear-gradient(135deg, #f1502f 0%, #ff7050 100%);
+  color: #3d1a1a;
+}
+
+/* Linux Gold-Black */
+.color-linux {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d1a 100%);
+  color: #fcc624;
+  border-color: #fcc624;
+  box-shadow: 0 0 10px rgba(252, 198, 36, 0.2);
+}
+
+.color-linux:hover {
+  background: linear-gradient(135deg, #fcc624 0%, #ffd94d 100%);
+  color: #1a1a1a;
+}
+
+/* Figma Purple-Pink */
+.color-figma {
+  background: linear-gradient(135deg, #3d1a3d 0%, #5d2d4d 100%);
+  color: #f24e1e;
+  border-color: #f24e1e;
+  box-shadow: 0 0 10px rgba(242, 78, 30, 0.2);
+}
+
+.color-figma:hover {
+  background: linear-gradient(135deg, #f24e1e 0%, #ff7a45 100%);
+  color: #3d1a3d;
 }
 
 @media (max-width: 768px) {

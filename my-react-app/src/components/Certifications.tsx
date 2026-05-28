@@ -51,6 +51,13 @@ function Certifications() {
       title: "[BETA] Subnetting Mastery",
       issuer: "Cisco Networking Academy",
       date: "2026",
+      link: " "
+    },
+    {
+      id: 7,
+      title: "Networking Devices and Initial Configuration",
+      issuer: "Cisco Networking Academy",
+      date: "2026",
       status: "In Progress"
     }
   ]

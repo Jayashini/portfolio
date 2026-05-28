@@ -3,13 +3,14 @@
   margin: 2rem auto;
   width: 100%;
   border-radius: 8px;
-  color: white;
+ 
 }
 
 #certifications h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   text-align: center;
+  color: #00d4ff ;
 }
 
 #certifications > p {
@@ -23,6 +24,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  color: white;
 }
 
 .certification-card {

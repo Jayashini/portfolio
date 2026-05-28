@@ -49,42 +49,43 @@ function Leadership() {
       id: 1,
       title: "Assistant Secretary",
       period: "2025 July - Present",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu urna a ante gravida condimentum. Sed quis sapien tincidunt, sodales nunc in, dictum justo.",
+      description: "As a Assistant Secretary of the Rotaract Club of UCSC, I have gained valuable experience in event organization, management & event coordination as well as reporting.",
       color: "orange",
-      icon: "secretary"
+      icon: "coordinator"
     },
     {
       id: 2,
       title: "Faculty Coordinator - UCSC",
       period: "July 2025 - Present",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu urna a ante gravida condimentum. Sed quis sapien tincidunt, sodales nunc in, dictum justo.",
+      description: "As a Faculty Coordinator of the Leo Club of UOC, I have gained valuable experience in team management, and how to manage instant situations",
       color: "magenta",
       icon: "coordinator"
     },
     {
       id: 3,
-      title: "Member of Publicity Team",
+      title: "Member - Publicity Team",
       period: "2025 - 2026",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu urna a ante gravida condimentum. Sed quis sapien tincidunt, sodales nunc in, dictum justo.",
+      description: "In CSSL Genz Chapter, I have good experience on working with people have better understand of how to hadle any kind of situation in any time where i need to involve. ",
       color: "purple",
       icon: "member"
     },
     {
       id: 4,
-      title: "Member of Content Team",
+      title: "Member - Content Team",
       period: "2024 - Present",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu urna a ante gravida condimentum. Sed quis sapien tincidunt, sodales nunc in, dictum justo.",
-      color: "lightgreen",
+      description: "In ACM Students' Branch UCSC, I improved my skills on giving better understand about an each event & make an excitement among the people.",
+      color: "teal",
       icon: "member"
     },
     {
       id: 5,
-      title: "CSSL GenZ Chapter Member",
-      period: "2025 - 2026",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu urna a ante gravida condimentum. Sed quis sapien tincidunt, sodales nunc in, dictum justo.",
-      color: "teal",
-      icon: "volunteer"
+      title: "Member - Public Relations ",
+      period: "2024 - Present",
+      description: " ",
+      color: "lightgreen",
+      icon: "member"
     }
+
   ]
 
   return (
