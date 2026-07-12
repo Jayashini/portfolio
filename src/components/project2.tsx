@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import p1Image from '../assets/img/p1.1.png'
-import '../assets/css/project.css'
+import '../assets/css/Project.css'
 
 function Project2() {
   const navigate = useNavigate()

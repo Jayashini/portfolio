@@ -1,75 +1,46 @@
 #footer {
-  background: linear-gradient(135deg, rgba(10, 10, 20, 0.9) 0%, rgba(20, 10, 30, 0.9) 100%);
-  color: #e0e0e0;
-  padding: 1rem;
- 
+  background: var(--bg);
+  color: var(--text);
+  padding: 48px 24px;
   position: relative;
-  border-top: 2px solid rgba(0, 212, 255, 0.2);
+  border-top: 1px solid var(--border);
   overflow: hidden;
 }
 
-#footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 400px;
-  height: 100px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 212, 255, 0.05) 0%, transparent 70%);
-  pointer-events: none;
-}
-
 .footer-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0rem;
-  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .footer-section h3 {
-  font-size: 1rem;
-  color: #00d4ff;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
-}
-
-
-.footer-section p {
-  font-size: 0.8rem;
-  line-height: 1.6;
-  opacity: 0.85;
-  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--text-h);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(0, 212, 255, 0.1);
 }
 
 .footer-bottom p {
-  font-size: 0.8rem;
-  opacity: 0.7;
-  margin: 0.5rem 0;
-}
-
-@keyframes heartbeat {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 0;
 }
 
 .footer-gradient {
@@ -77,33 +48,19 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(0, 212, 255, 0.3) 50%, transparent 100%);
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
   pointer-events: none;
+  opacity: 0.3;
 }
 
 @media (max-width: 768px) {
   #footer {
-    padding: 2rem 1.5rem 1rem;
-    margin-top: 3rem;
+    padding: 32px 20px;
   }
 
   .footer-content {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .footer-section h3 {
-    font-size: 1.2rem;
-  }
-
-  .footer-section h4 {
-    font-size: 1rem;
-  }
-
-  .social-links {
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
 }

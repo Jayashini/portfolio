@@ -11,7 +11,7 @@ interface Certification {
 
 function Certifications() {
   const certifications: Certification[] = [
-      {
+    {
       id: 1,
       title: "Understand Threats and Prevent Attacks",
       issuer: "Alison - CPD Certified",
@@ -64,6 +64,9 @@ function Certifications() {
 
   return (
     <section id="certification">
+      <br />
+      <br />
+      <br />
       <div className="certifications-grid">
         {certifications.map((cert) => (
           <div key={cert.id} className="certification-card">
