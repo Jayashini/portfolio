@@ -8,7 +8,7 @@ import p1Imagehome from '../assets/img/p1.home.png'
 import p1Imagesp from '../assets/img/p1.sp.jpeg'
 import p1Imagespp from '../assets/img/p1.spp.png'
 import p1Imagespc from '../assets/img/p1.spc.png'
-import '../assets/css/Project.css'
+import '../assets/css/project.css'
 
 function Project1() {
   const navigate = useNavigate()
