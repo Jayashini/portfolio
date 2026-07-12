@@ -1,13 +1,14 @@
 import { useNavigate } from 'react-router-dom'
 import '../assets/css/Projects.css'
 import p1Image from '../assets/img/p1.png'
+import p2Image from '../assets/img/firemex/firemex.png'
 
 interface Project {
   id: number
   title: string
   category: string
   description: string
-  
+
   link: string
   image?: string
   status?: 'Completed' | 'In Progress' | 'Planned'
@@ -28,12 +29,12 @@ function Projects() {
     },
     {
       id: 2,
-      title: "Portfolio Website",
-      category: "Personal Branding",
-      description: "A responsive portfolio website built with React and TypeScript, showcasing projects, skills, and professional experience.",
-      image: p1Image,
+      title: "FiremeX",
+      category: "Fire detection system",
+      description: "An AI powered software-based fire detection system for CCTV platforms.",
+      image: p2Image,
       link: "https://example.com",
-      status: "Completed"
+      status: "In Progress"
     },
     {
       id: 3,
@@ -54,9 +55,9 @@ function Projects() {
   return (
     <section id="projects">
 
-      <br/>
+      <br />
 
-      <h2>Projects</h2>
+      <h2>PROJECTS</h2>
       <p>Check my recent work and projects</p>
       <div className="projects-grid">
         {projects.map((project) => (
@@ -79,9 +80,9 @@ function Projects() {
               <h3>{project.title}</h3>
               <p className="category">{project.category}</p>
               <p className="description">{project.description}</p>
-               <br />
+              <br />
 
-              <button 
+              <button
                 className="view-project"
                 onClick={() => handleViewProject(project.id)}
               >

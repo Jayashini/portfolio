@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+#projects h2 {
+  color: #261d05;
+  font-weight: 2rem;
+}
+
 .back-button {
   position: absolute;
   top: 80px;

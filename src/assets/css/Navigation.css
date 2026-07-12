@@ -11,7 +11,7 @@
 }
 
 .navbar-pill {
-  background: #372800;
+  background: #261d05;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 50px;
   padding: 8px 10px;
@@ -127,6 +127,7 @@
 }
 
 @media (max-width: 480px) {
+
   /* Hide the email pill on very small screens to fit links */
   .navbar-email-pill {
     display: none;

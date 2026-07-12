@@ -1,7 +1,9 @@
 import { useNavigate } from 'react-router-dom'
-import p1Image from '../assets/img/p1.1.png'
 import '../assets/css/Project.css'
-
+import login from '../assets/img/firemex/login.png'
+import cameralive from '../assets/img/firemex/cameralive feed.png'
+import dashboard from '../assets/img/firemex/dashboard.png'
+import registration from '../assets/img/firemex/RegistrationGateway.png'
 function Project2() {
   const navigate = useNavigate()
 
@@ -24,14 +26,14 @@ function Project2() {
       <div className="project-detail-container">
         <div className="project-detail-header">
           <h2>Colombo Sports E-Portal</h2>
-    
+
         </div>
 
         <div className="project-detail-content">
           <div className="detail-section">
             <h2>Project Overview</h2>
             <p>
-              Developed a centralized platform to manage sports operations for the University of Colombo, 
+              Developed a centralized platform to manage sports operations for the University of Colombo,
               covering scheduling, team/player management, registrations, and performance tracking.
             </p>
           </div>
@@ -43,29 +45,18 @@ function Project2() {
                 <h2>Project Gallery</h2>
                 <div className="image-gallery">
                   <div className="gallery-item">
-                    <img src={p1Image} alt="Dashboard View" />
+                    <img src={login} alt="Dashboard View" />
                   </div>
                   <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Team+Management" alt="Team Management" />
+                    <img src={cameralive} alt="Team Management" />
                   </div>
                   <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Scheduling" alt="Scheduling System" />
+                    <img src={dashboard} alt="Scheduling System" />
                   </div>
                   <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Registration" alt="Registration Form" />
+                    <img src={registration} alt="Registration Form" />
                   </div>
-                  <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Analytics" alt="Performance Analytics" />
-                  </div>
-                  <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Reports" alt="Reports" />
-                  </div>
-                  <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=Mobile+View" alt="Mobile View" />
-                  </div>
-                  <div className="gallery-item">
-                    <img src="https://via.placeholder.com/300x200?text=User+Profile" alt="User Profile" />
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -88,14 +79,14 @@ function Project2() {
                 </ul>
               </div>
 
-              
+
             </div>
           </div>
-          
+
         </div>
-        
+
       </div>
-      
+
     </section>
   )
 }

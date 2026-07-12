@@ -57,7 +57,7 @@ function Skills() {
     <section id="skills">
       <br />
       <br />
-      <h2>Skills & Technologies</h2>
+      <h2>TECHNOLOGIES</h2>
       <div className="skills-container">
         {skillSections.map((section, index) => (
           <div key={index} className="skill-section">
