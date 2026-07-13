@@ -99,7 +99,7 @@ function HomePage() {
               <p>Connect with me or download my resume</p>
               <ul>
                 <li>
-                  <a href="https://github.com/Jayashini" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Jayashini" target="_blank" rel="noopener noreferrer" className="resume-button">
                     <svg className="button-icon" role="presentation" aria-hidden="true">
                       <use href="/icons.svg#github-icon"></use>
                     </svg>
@@ -108,21 +108,21 @@ function HomePage() {
                 </li>
 
                 <li>
-                  <a href="https://www.linkedin.com/in/jayashini-jayaweera/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/jayashini-jayaweera/" target="_blank" rel="noopener noreferrer" className="resume-button">
                     <svg className="button-icon" role="presentation" aria-hidden="true" >
                       <use href="/icons.svg#linkedin-icon"></use>
                     </svg>
                     LinkedIn
                   </a>
                 </li>
+                <li>
+                  <a href={resumePDF} download="Jayashini_Jayaweera_Resume.pdf" className="resume-button">
+                    Download My Resume
+                  </a>
+                </li>
               </ul>
 
-              <div className="resume-section">
 
-                <a href={resumePDF} download="Jayashini_Jayaweera_Resume.pdf" className="resume-button">
-                  Download My Resume
-                </a>
-              </div>
             </section>
 
 

@@ -53,6 +53,7 @@
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
   transition: all 0.3s ease;
+  box-shadow: 0 5px 10px -7px rgba(114, 96, 42, 0.507);
 }
 
 .mini-skill-card:hover {

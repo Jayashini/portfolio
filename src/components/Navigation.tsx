@@ -23,20 +23,21 @@ function Navigation() {
         {/* Center Menu Links */}
         <ul className="navbar-links">
           <li>
-            <a href="#about" onClick={(e) => { e.preventDefault(); handleScroll('about'); }}>About</a>
+            <a href="#about" onClick={(e) => { e.preventDefault(); handleScroll('about'); }}>ABOUT</a>
           </li>
           <li>
-            <a href="#projects" onClick={(e) => { e.preventDefault(); handleScroll('projects'); }}>Work</a>
+            <a href="#leadership" onClick={(e) => { e.preventDefault(); handleScroll('leadership'); }}>VOLUNTEERING</a>
           </li>
           <li>
-            <a href="#leadership" onClick={(e) => { e.preventDefault(); handleScroll('leadership'); }}>Leadership</a>
+            <a href="#projects" onClick={(e) => { e.preventDefault(); handleScroll('projects'); }}>PROJECTS</a>
           </li>
           <li>
-            <a href="#skills" onClick={(e) => { e.preventDefault(); handleScroll('skills'); }}>Skills</a>
+            <a href="#certifications" onClick={(e) => { e.preventDefault(); handleScroll('certifications'); }}>CERTIFICATIONS</a>
           </li>
           <li>
-            <a href="#certifications" onClick={(e) => { e.preventDefault(); handleScroll('certifications'); }}>Certifications</a>
+            <a href="#skills" onClick={(e) => { e.preventDefault(); handleScroll('skills'); }}>TECHNOLOGIES</a>
           </li>
+
         </ul>
 
         {/* Right Email Pill */}

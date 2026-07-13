@@ -5,7 +5,7 @@
   transform: translateX(-50%);
   z-index: 1000;
   width: 90%;
-  max-width: 820px;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
 }

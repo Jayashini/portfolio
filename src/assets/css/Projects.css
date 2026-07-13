@@ -38,7 +38,7 @@
   border: 1px solid rgba(114, 96, 42, 0.507);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: 0 5px 10px -7px rgba(114, 96, 42, 0.507);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   display: flex;

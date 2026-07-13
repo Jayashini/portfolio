@@ -6,13 +6,9 @@ function Footer() {
   return (
     <footer id="footer">
       <div className="footer-container">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h3>Jayashini Jayaweera</h3>
-            
-          </div>
 
-        </div>
+
+
 
         <div className="footer-bottom">
           <p>&copy; {currentYear} Jayashini Jayaweera. All rights reserved.</p>

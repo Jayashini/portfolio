@@ -20,7 +20,8 @@ function Skills() {
         { name: "JavaScript", color: "color-js" },
         { name: "TypeScript", color: "color-ts" },
         { name: "Python", color: "color-python" },
-        { name: "C/C++", color: "color-cpp" }
+        { name: "C/C++", color: "color-cpp" },
+        { name: "GO", color: "color-go" }
       ]
     },
     {
@@ -33,7 +34,8 @@ function Skills() {
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", color: "color-nodejs" }
+        { name: "Node.js", color: "color-nodejs" },
+        { name: "Next.js", color: "color-nextjs" }
       ]
     },
     {
@@ -48,7 +50,8 @@ function Skills() {
       skills: [
         { name: "Git", color: "color-git" },
         { name: "Linux", color: "color-linux" },
-        { name: "Figma", color: "color-figma" }
+        { name: "Figma", color: "color-figma" },
+        { name: "Burpsuite", color: "color-burp" }
       ]
     }
   ]
