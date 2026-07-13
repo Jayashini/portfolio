@@ -10,6 +10,8 @@ import Project1 from './components/Project1'
 import Project2 from './components/Project2'
 import resumePDF from './assets/resume/Jayashini.pdf'
 import './App.css'
+import Blog from './components/Blog'
+import BurpsuiteBlog from './components/Blog/burpsuite'
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function AppContent() {
         <Route path="/" element={<HomePage />} />
         <Route path="/project/1" element={<Project1 />} />
         <Route path="/project/2" element={<Project2 />} />
+        <Route path="/blog/Burpsuite" element={<BurpsuiteBlog />} />
       </Routes>
     </>
   )
@@ -88,6 +91,7 @@ function HomePage() {
       <Projects />
 
       <Skills />
+      <Blog />
 
 
       <section id="next-steps">

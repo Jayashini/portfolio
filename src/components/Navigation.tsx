@@ -37,6 +37,9 @@ function Navigation() {
           <li>
             <a href="#skills" onClick={(e) => { e.preventDefault(); handleScroll('skills'); }}>TECHNOLOGIES</a>
           </li>
+          <li>
+            <a href="#blog" onClick={(e) => { e.preventDefault(); handleScroll('blog'); }}>BLOG</a>
+          </li>
 
         </ul>
 

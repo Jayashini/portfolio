@@ -1,0 +1,35 @@
+#blog {
+    align-items: center;
+    padding: 80px 24px;
+    background: linear-gradient(180deg, transparent 0%, rgba(124, 58, 237, 0.02) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#blog h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--text-h);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+#blog>p {
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: 1.15rem;
+    color: var(--text);
+}
+
+/*
+#blog .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+    */
