@@ -21,28 +21,36 @@ function Navigation() {
         {/* Center Menu Links */}
         <ul className="navbar-links">
           <li>
-            <a href="#about" onClick={(e) => { e.preventDefault(); handleScroll('about'); }}>ABOUT</a>
+            <span onClick={() => handleScroll('about')}>ABOUT</span>
           </li>
           <li>
-            <a href="#leadership" onClick={(e) => { e.preventDefault(); handleScroll('leadership'); }}>VOLUNTEERING</a>
+            <span onClick={() => handleScroll('leadership')}>VOLUNTEERING</span>
           </li>
           <li>
-            <a href="#certifications" onClick={(e) => { e.preventDefault(); handleScroll('certifications'); }}>CERTIFICATIONS</a>
+            <span onClick={() => handleScroll('certifications')}>CERTIFICATIONS</span>
           </li>
           <li>
-            <a href="#projects" onClick={(e) => { e.preventDefault(); handleScroll('projects'); }}>PROJECTS</a>
+            <span onClick={() => handleScroll('projects')}>PROJECTS</span>
           </li>
           <li>
-            <a href="#skills" onClick={(e) => { e.preventDefault(); handleScroll('skills'); }}>TECHNOLOGIES</a>
+            <span onClick={() => handleScroll('skills')}>TECHNOLOGIES</span>
           </li>
           <li>
-            <a href="#blog" onClick={(e) => { e.preventDefault(); handleScroll('blog'); }}>BLOG</a>
+            <span onClick={() => handleScroll('blog')}>BLOG</span>
           </li>
-
         </ul>
 
         {/* Right Email Pill */}
-        <a href="mailto:jayashinisjayaweera@gmail.com" className="navbar-email-pill">
+        <a 
+          href="mailto:jayashinisjayaweera@gmail.com" 
+          className="navbar-email-pill"
+          onClick={(e) => {
+            e.preventDefault();
+            navigator.clipboard.writeText("jayashinisjayaweera@gmail.com");
+            alert("Email copied to clipboard: jayashinisjayaweera@gmail.com");
+            window.location.href = "mailto:jayashinisjayaweera@gmail.com";
+          }}
+        >
           EMAIL ME
         </a>
       </div>
