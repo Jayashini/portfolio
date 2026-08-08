@@ -42,8 +42,8 @@ function Navigation() {
         </ul>
 
         {/* Right Email Pill */}
-        <a href="mailto:[EMAIL_ADDRESS]" className="navbar-email-pill">
-          jayashinisjayaweera@gmail.com
+        <a href="mailto:jayashinisjayaweera@gmail.com" className="navbar-email-pill">
+          EMAIL ME
         </a>
       </div>
     </nav>

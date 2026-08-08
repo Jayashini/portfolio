@@ -3,6 +3,7 @@
   background: linear-gradient(180deg, rgba(124, 58, 237, 0.02) 0%, transparent 100%);
   position: relative;
   overflow: hidden;
+  margin-top: 35px;
 }
 
 #leadership h2 {

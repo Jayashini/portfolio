@@ -34,8 +34,10 @@ function About() {
 
               I am currently looking for internship opportunities where I can improve my technical skills, teamwork, and industry experience
             </p>
+            <br />
           </div>
         </div>
+        <br />
       </div>
     </section>
   )

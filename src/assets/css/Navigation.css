@@ -36,6 +36,7 @@
   cursor: pointer;
   color: #121214;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .navbar-logo-circle:hover {
@@ -71,7 +72,6 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-/* Right Email Pill */
 .navbar-email-pill {
   background: #ffffff;
   color: #121214;
@@ -82,6 +82,7 @@
   font-weight: 600;
   transition: all 0.3s ease;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .navbar-email-pill:hover {
@@ -90,7 +91,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar-floating-wrapper {
     top: 16px;
     width: 95%;
