@@ -2,7 +2,9 @@ import alisonLogo from '../assets/img/logo/alison.png'
 import uomLogo from '../assets/img/logo/University_of_Moratuwa.png'
 import ibmLogo from '../assets/img/logo/ibm skill build.png'
 import ciscoLogo from '../assets/img/logo/cisco networking academy.jpg'
+import linkedinLogo from '../assets/img/logo/linkedin.png'
 import '../assets/css/Certifications.css'
+
 
 interface Certification {
   id: number
@@ -66,6 +68,38 @@ function Certifications() {
     },
     {
       id: 7,
+      title: "Designing RESTful APIs",
+      issuer: "LinkedIn Learning Community",
+      date: "2026",
+      verification: "Linkedin",
+      link: "https://www.linkedin.com/learning/certificates/fa75d7566ed08519e26eaedab73bec744ae3c53b14187decb2a4cfffb04ed117?trk=share_certificate"
+    },
+    {
+      id: 8,
+      title: "Understanding Manual Testing",
+      issuer: "LinkedIn Learning Community",
+      date: "2026",
+      verification: "Linkedin",
+      link: "https://www.linkedin.com/learning/certificates/ec7c771d69c0998c4e242cbae2c167dbb2b38c3263ffde6e17efe8e641836c4c?trk=share_certificate"
+    },
+    {
+      id: 9,
+      title: "Learning Go",
+      issuer: "LinkedIn Learning Community",
+      date: "2026",
+      verification: "Linkedin",
+      link: "https://www.linkedin.com/learning/certificates/ea219ed7be4e09d6e0bb0f47ac8a15849862045518e3463ef90ad06333968d65?trk=share_certificate"
+    },
+    {
+      id: 10,
+      title: "Burp Suite Essential Training",
+      issuer: "LinkedIn Learning Community",
+      date: "2026",
+      verification: "Linkedin",
+      link: "https://www.linkedin.com/learning/certificates/4646da7c888be1139717ba6668e568a933e94126b0675dfd7c2403aa5105c26a?trk=share_certificate"
+    },
+    {
+      id: 11,
       title: "Networking Devices & Initial Configuration",
       issuer: "Cisco Networking Academy",
       date: "2026",
@@ -101,6 +135,13 @@ function Certifications() {
       return (
         <div className="logo-wrapper cisco-logo">
           <img src={ciscoLogo} alt="Cisco Networking Academy Logo" className="issuer-logo-img" />
+        </div>
+      )
+    }
+    if (lowerIssuer.includes('linkedin')) {
+      return (
+        <div className="logo-wrapper linkedin-logo">
+          <img src={linkedinLogo} alt="LinkedIn Logo" className="issuer-logo-img" />
         </div>
       )
     }

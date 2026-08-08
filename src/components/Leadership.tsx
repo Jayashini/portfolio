@@ -46,9 +46,17 @@ const LeadershipIcons = {
 function Leadership() {
   const leadershipRoles: LeadershipRole[] = [
     {
+      id: 6,
+      title: "Secretary",
+      period: "2026 - Present",
+      description: "As the Secretary of the ACM Student Chapter of UCSC, I manage official communications, coordinate executive meetings, and oversee documentation for chapter events and member relations.",
+      color: "cyan",
+      icon: "coordinator"
+    },
+    {
       id: 1,
       title: "Assistant Secretary",
-      period: "2025 July - Present",
+      period: "2025 - 2026",
       description: "As a Assistant Secretary of the Rotaract Club of UCSC, I have gained valuable experience in event organization, management & event coordination as well as reporting.",
       color: "orange",
       icon: "coordinator"
@@ -56,7 +64,7 @@ function Leadership() {
     {
       id: 2,
       title: "Faculty Coordinator - UCSC",
-      period: "July 2025 - Present",
+      period: "2025 - 2026",
       description: "As a Faculty Coordinator of the Leo Club of UOC, I have gained valuable experience in team management, and how to manage instant situations",
       color: "magenta",
       icon: "coordinator"
@@ -72,7 +80,7 @@ function Leadership() {
     {
       id: 4,
       title: "Member - Content Team",
-      period: "2024 - Present",
+      period: "2024 - 2026",
       description: "In ACM Students' Branch UCSC, I improved my skills on giving better understand about an each event & make an excitement among the people.",
       color: "teal",
       icon: "member"
@@ -80,8 +88,8 @@ function Leadership() {
     {
       id: 5,
       title: "Member - Public Relations ",
-      period: "2024 - Present",
-      description: " ",
+      period: "2024 - 2025",
+      description: "As a public relation member, I Gained confidence when talking about your club projects to crowds or partners and grew a strong professional network by connecting with community leaders, and other Rotaract peers.",
       color: "lightgreen",
       icon: "member"
     }
