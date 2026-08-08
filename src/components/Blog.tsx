@@ -20,8 +20,8 @@ function Blog() {
     const blogs: BlogPost[] = [
         {
             id: 1,
-            title: "Burp Suite Mastery",
-            description: "A comprehensive guide on using Burp Suite, the leading vulnerability scanner for web applications, to identify security flaws.",
+            title: "Hands-on Burp Suite",
+            description: "Bridged academic knowledge with extensive practical application by identifying key operational findings through Burp Suite. This hands-on experience provided me with deep technical insights that complement my theoretical background.",
             dateDay: "25",
             dateMonthYear: "Jun. 2026",
             author: "Jayashini Jayaweera",

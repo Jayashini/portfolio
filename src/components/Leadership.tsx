@@ -80,7 +80,7 @@ function Leadership() {
     {
       id: 4,
       title: "Member - Content Team",
-      period: "2024 - 2026",
+      period: "2024 - 202",
       description: "In ACM Students' Branch UCSC, I improved my skills on giving better understand about an each event & make an excitement among the people.",
       color: "teal",
       icon: "member"

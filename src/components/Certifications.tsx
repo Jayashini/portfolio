@@ -5,7 +5,6 @@ import ciscoLogo from '../assets/img/logo/cisco networking academy.jpg'
 import linkedinLogo from '../assets/img/logo/linkedin.png'
 import '../assets/css/Certifications.css'
 
-
 interface Certification {
   id: number
   title: string
@@ -131,17 +130,17 @@ function Certifications() {
         </div>
       )
     }
+    if (lowerIssuer.includes('linkedin')) {
+      return (
+        <div className="logo-wrapper linkedin-logo">
+          <img src={linkedinLogo} alt="LinkedIn Learning Logo" className="issuer-logo-img" />
+        </div>
+      )
+    }
     if (lowerIssuer.includes('cisco')) {
       return (
         <div className="logo-wrapper cisco-logo">
           <img src={ciscoLogo} alt="Cisco Networking Academy Logo" className="issuer-logo-img" />
-        </div>
-      )
-    }
-    if (lowerIssuer.includes('linkedin')) {
-      return (
-        <div className="logo-wrapper linkedin-logo">
-          <img src={linkedinLogo} alt="LinkedIn Logo" className="issuer-logo-img" />
         </div>
       )
     }

@@ -13,14 +13,15 @@ function About() {
         <div className="about-content">
           <div className="about-skills-left">
             <div className="skills-mini-grid">
-              <div className="mini-skill-card">React.js</div>
-              <div className="mini-skill-card">TypeScript</div>
-              <div className="mini-skill-card">JavaScript</div>
-              <div className="mini-skill-card">Node.js</div>
-              <div className="mini-skill-card">Python</div>
-              <div className="mini-skill-card">MySQL</div>
-              <div className="mini-skill-card">Linux</div>
-              <div className="mini-skill-card">Git</div>
+              <div className="mini-skill-card">Database Design</div>
+              <div className="mini-skill-card">Cyber Security</div>
+              <div className="mini-skill-card">Full-stack Development</div>
+              <div className="mini-skill-card">Software Testing Fundamentals</div>
+              <div className="mini-skill-card">System Design</div>
+              <div className="mini-skill-card">UI/UX Implementation</div>
+              <div className="mini-skill-card">Version Control</div>
+
+              <div className="mini-skill-card">REST API</div>
             </div>
           </div>
 
@@ -29,10 +30,11 @@ function About() {
             <h3>Who I Am</h3>
             <br />
             <p>
-              I'm passionate about cybersecurity and further, interests in web development.
-              I enjoy building practical systems that solve real-world problems and continuously learning new technologies.
+              I’m an Information Systems undergraduate with a strong interest in cybersecurity and software engineering. I enjoy developing practical applications, understanding how systems work, and exploring ways to build secure and reliable solutions.
 
-              I am currently looking for internship opportunities where I can improve my technical skills, teamwork, and industry experience
+              <br />      <br />Through academic projects and technical work, I’m continuously strengthening my skills in full-stack development, databases, system design, and cybersecurity. I’m eager to learn, collaborate, and gain industry experience while contributing to meaningful projects.
+
+              <br /> <br />I am currently looking for internship opportunities where I can improve my technical skills, and industry experience
             </p>
             <br />
           </div>
