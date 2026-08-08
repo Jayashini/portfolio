@@ -54,7 +54,7 @@ function HomePage() {
                 <span className="subtitle">HELLO</span>
                 <h1>I'M <br />JAYASHINI JAYAWEERA</h1>
                 <p>This is my portfolio to get to know about me. Currently, I'm a third-year Information Systems Undergraduate at University of Colombo School of Computing.</p>
-                <a href="#about" className="cta-button">ABOUT ME</a>
+                <a href="#about" className="cta-button" style={{ marginTop: '100px' }}>ABOUT ME</a>
               </div>
               <div className="profile-section">
                 <img src="/profile.jpg" alt="Jayashini Jayaweera" className="profile-image" />
@@ -81,7 +81,8 @@ function HomePage() {
 
 
               <h1>CERTIFICATIONS </h1>
-              <p>This is my certifications & Credentials </p>
+              <br />
+              <p>These credentials serve as verifiable proof of my knowledge and technical skills.</p>
               <Certifications />
             </div>
           </section>

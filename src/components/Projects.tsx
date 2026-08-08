@@ -36,15 +36,7 @@ function Projects() {
       link: "https://example.com",
       status: "In Progress"
     },
-    {
-      id: 3,
-      title: "Portfolio Website",
-      category: "Personal Branding",
-      description: "A responsive portfolio website built with React and TypeScript, showcasing projects, skills, and professional experience.",
-      image: p1Image,
-      link: "https://example.com",
-      status: "Completed"
-    },
+
 
   ]
 
