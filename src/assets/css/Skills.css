@@ -14,64 +14,73 @@
 .skills-container {
   max-width: 1000px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
 }
 
 .skill-section {
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--accent);
-  padding: 32px;
-  border-radius: 20px;
-  box-shadow: 0 5px 10px -7px var(--accent);
-  text-align: left;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.skill-section:hover {
-  transform: translateY(-8px);
-  border-color: var(--accent);
-  box-shadow: 0 15px 30px -15px var(--accent);
+  width: 100%;
 }
 
 .skill-section h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--primary-brand);
   margin-bottom: 20px;
   margin-top: 0;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
+  border-left: 4px solid var(--primary-brand);
+  padding-left: 12px;
 }
 
 .skills-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 
 .skill-badge {
   display: inline-flex;
   align-items: center;
-  padding: 8px 16px;
-  border-radius: 30px;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
   font-size: 14px;
-  font-weight: 600;
-  border: 1px solid var(--border);
-  background: var(--social-bg);
-  color: var(--text-h);
-  transition: all 0.2s ease;
+  font-weight: 700;
+  background: #2d1b01;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease-in-out;
   cursor: default;
 }
 
 .skill-badge:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow);
-  border-color: var(--accent);
-  background: var(--accent-bg);
-  color: var(--accent);
+  background: #111827;
+  border-color: var(--primary-brand);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.tech-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.react-spin {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 768px) {
@@ -83,7 +92,8 @@
     font-size: 2.2rem;
   }
 
-  .skill-section {
-    padding: 24px;
+  .skill-badge {
+    padding: 8px 16px;
+    font-size: 13px;
   }
 }

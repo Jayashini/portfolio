@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import image1 from '../../assets/img/burpsuite/image 1.png'
 import image2 from '../../assets/img/burpsuite/image 2.png'
 import image3 from '../../assets/img/burpsuite/image 3.png'
@@ -9,6 +10,10 @@ import '../../assets/css/Blog.css'
 
 function BurpsuiteBlog() {
     const navigate = useNavigate()
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'auto' })
+    }, [])
 
     const handleBackToBlogs = () => {
         navigate('/')

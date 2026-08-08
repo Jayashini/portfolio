@@ -160,10 +160,34 @@
 .image-gallery {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  max-height: 520px;
+  overflow-y: auto;
+  gap: 16px;
+  padding-right: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.image-gallery::-webkit-scrollbar {
+  width: 8px;
+}
+
+.image-gallery::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+
+.image-gallery::-webkit-scrollbar-thumb {
+  background: #462a02;
+  border-radius: 4px;
+}
+
+.image-gallery::-webkit-scrollbar-thumb:hover {
+  background: #5d3803;
 }
 
 .gallery-item {
+  flex-shrink: 0;
+  width: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 16px;
@@ -179,7 +203,7 @@
 }
 
 .gallery-item:hover img {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 @media (max-width: 900px) {

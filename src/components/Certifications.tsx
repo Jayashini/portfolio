@@ -62,7 +62,7 @@ function Certifications() {
       issuer: "Cisco Networking Academy",
       date: "2026",
       verification: "Cisco",
-      link: " "
+      link: "https://skillsforall.com/credentials/subnetting-mastery"
     },
     {
       id: 7,

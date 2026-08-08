@@ -155,6 +155,16 @@
   cursor: pointer;
 }
 
+.view-project-link {
+  padding: 10px 20px;
+  color: #ffffff;
+  background: #462a02;
+  border: 1px solid #462a02;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 .view-project:hover {
   background: var(--accent);
   color: #ffffff;

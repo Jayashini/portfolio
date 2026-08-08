@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import '../assets/css/Project.css'
 import login from '../assets/img/firemex/login.png'
 import cameralive from '../assets/img/firemex/cameralive feed.png'
@@ -6,6 +7,10 @@ import dashboard from '../assets/img/firemex/dashboard.png'
 import registration from '../assets/img/firemex/RegistrationGateway.png'
 function Project2() {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }, [])
 
   const handleBackToProjects = () => {
     navigate('/')
