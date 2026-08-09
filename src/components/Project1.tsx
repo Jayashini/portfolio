@@ -30,14 +30,14 @@ function Project1() {
 
   return (
     <section id="project1-detail">
-      <button className="back-button" onClick={handleBackToProjects}>
-        ← Back to Projects
-      </button>
-
       <div className="project-detail-container">
-        <div className="project-detail-header">
-          <h2>Colombo Sports E-Portal</h2>
+        <button className="back-button" onClick={handleBackToProjects}>
+          ← Back to Projects
+        </button>
 
+        <div className="project-detail-header">
+          <span className="project-detail-category">SPORTS MANAGEMENT SYSTEM</span>
+          <h2>Colombo Sports E-Portal</h2>
         </div>
 
         <div className="project-detail-content">

@@ -21,7 +21,7 @@ function Blog() {
         {
             id: 1,
             title: "Hands-on Burp Suite",
-            description: "Bridged academic knowledge with extensive practical application by identifying key operational findings through Burp Suite. This hands-on experience provided me with deep technical insights that complement my theoretical background.",
+            description: "Bridged academic security concepts with practical hands-on vulnerability assessments using Burp Suite.",
             dateDay: "25",
             dateMonthYear: "Jun. 2026",
             author: "Jayashini Jayaweera",
@@ -37,9 +37,8 @@ function Blog() {
 
     return (
         <section id="blog">
-            <br />
-            <h2>BLOGS</h2>
-            <p>Take a minute to read my blog</p>
+            <h2 className="section-header-title">BLOGS</h2>
+            <p className="section-header-subtitle">Take a minute to read my blog</p>
             <div className="blogs-grid">
                 {blogs.map((blog) => (
                     <div key={blog.id} className="blog-card">
@@ -84,3 +83,4 @@ function Blog() {
 }
 
 export default Blog
+

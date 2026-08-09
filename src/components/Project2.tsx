@@ -24,22 +24,21 @@ function Project2() {
 
   return (
     <section id="project1-detail">
-      <button className="back-button" onClick={handleBackToProjects}>
-        ← Back to Projects
-      </button>
-
       <div className="project-detail-container">
-        <div className="project-detail-header">
-          <h2>Colombo Sports E-Portal</h2>
+        <button className="back-button" onClick={handleBackToProjects}>
+          ← Back to Projects
+        </button>
 
+        <div className="project-detail-header">
+          <span className="project-detail-category">FIRE DETECTION SYSTEM</span>
+          <h2>FiremeX</h2>
         </div>
 
         <div className="project-detail-content">
           <div className="detail-section">
             <h2>Project Overview</h2>
             <p>
-              Developed a centralized platform to manage sports operations for the University of Colombo,
-              covering scheduling, team/player management, registrations, and performance tracking.
+              An AI-powered software-based fire detection system for CCTV platforms, utilizing advanced computer vision models to identify thermal anomalies and smoke patterns in real-time.
             </p>
           </div>
 
@@ -71,16 +70,11 @@ function Project2() {
               <div className="detail-section">
                 <h2>Key Features</h2>
                 <ul className="features-list">
-                  <li>Centralized sports operations management</li>
-                  <li>Team and player management system</li>
-                  <li>Registration and booking system</li>
-                  <li>Performance tracking and analytics</li>
-                  <li>User authentication and authorization</li>
-                  <li>Responsive design for all devices</li>
-                  <li>Registration and booking system</li>
-                  <li>Performance tracking and analytics</li>
-                  <li>User authentication and authorization</li>
-                  <li>Responsive design for all devices</li>
+                  <li>AI-powered computer vision thermal anomaly detection</li>
+                  <li>Real-time live camera feed monitoring & alert dashboard</li>
+                  <li>User authentication & gateway registration control</li>
+                  <li>Centralized incident logging & analytical dashboard</li>
+                  <li>Responsive cross-device user interface</li>
                 </ul>
               </div>
 

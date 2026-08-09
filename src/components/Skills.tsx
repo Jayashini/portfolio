@@ -203,7 +203,8 @@ function Skills() {
 
   return (
     <section id="skills">
-      <h2>TECHNOLOGIES</h2>
+      <h2 className="section-header-title">TECHNOLOGIES</h2>
+      <p className="section-header-subtitle">Tools, languages, and frameworks I work with</p>
       <div className="skills-container">
         {skillSections.map((section, index) => (
           <div key={index} className="skill-section">
@@ -224,3 +225,4 @@ function Skills() {
 }
 
 export default Skills
+

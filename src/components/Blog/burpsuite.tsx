@@ -27,11 +27,11 @@ function BurpsuiteBlog() {
 
     return (
         <section id="project1-detail" className="blog-post-page">
-            <button className="back-button" onClick={handleBackToBlogs}>
-                Back
-            </button>
-
             <div className="project-detail-container">
+                <button className="back-button" onClick={handleBackToBlogs}>
+                    ← Back to Blogs
+                </button>
+
                 <div className="project-detail-header">
                     <h2>Burp Suite Mastery: Pentesting, Crawling, & Authentication</h2>
                     <p className="blog-post-meta">Published by Jayashini Jayaweera | Cybersecurity</p>

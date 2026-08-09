@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import alisonLogo from '../assets/img/logo/alison.png'
 import uomLogo from '../assets/img/logo/University_of_Moratuwa.png'
 import ibmLogo from '../assets/img/logo/ibm skill build.png'
@@ -16,6 +17,8 @@ interface Certification {
 }
 
 function Certifications() {
+  const [visibleCount, setVisibleCount] = useState<number>(6)
+
   const certifications: Certification[] = [
     {
       id: 1,
@@ -107,6 +110,8 @@ function Certifications() {
     }
   ]
 
+  const displayedCertifications = certifications.slice(0, visibleCount)
+
   const getIssuerLogo = (issuer: string) => {
     const lowerIssuer = issuer.toLowerCase()
     if (lowerIssuer.includes('alison')) {
@@ -154,10 +159,12 @@ function Certifications() {
   }
 
   return (
-    <section id="certification">
-      <br /><br /><br />
+    <section id="certifications">
+      <h2 className="section-header-title">CERTIFICATIONS</h2>
+      <p className="section-header-subtitle">These credentials serve as verifiable proof of my knowledge and technical skills.</p>
+
       <div className="certifications-grid">
-        {certifications.map((cert) => (
+        {displayedCertifications.map((cert) => (
           <div key={cert.id} className="certification-card">
             <div className="card-header">
               {getIssuerLogo(cert.issuer)}
@@ -191,8 +198,29 @@ function Certifications() {
           </div>
         ))}
       </div>
+
+      {visibleCount < certifications.length ? (
+        <div className="load-more-container">
+          <button className="load-more-btn" onClick={() => setVisibleCount(prev => prev + 6)}>
+            Load More Certifications
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+      ) : certifications.length > 6 ? (
+        <div className="load-more-container">
+          <button className="load-more-btn outlined-load-btn" onClick={() => setVisibleCount(6)}>
+            Show Less
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
+            </svg>
+          </button>
+        </div>
+      ) : null}
     </section>
   )
 }
 
 export default Certifications
+

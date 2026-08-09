@@ -3,6 +3,7 @@ import '../assets/css/Leadership.css'
 interface LeadershipRole {
   id: number
   title: string
+  organization: string
   period: string
   description: string
   color: 'orange' | 'magenta' | 'purple' | 'lightgreen' | 'teal' | 'blue' | 'cyan' | 'pink' | 'yellow'
@@ -48,6 +49,7 @@ function Leadership() {
     {
       id: 6,
       title: "Secretary",
+      organization: "ACM Student Chapter of UCSC",
       period: "2026 - Present",
       description: "As the Secretary of the ACM Student Chapter of UCSC, I manage official communications, coordinate executive meetings, and oversee documentation for chapter events and member relations.",
       color: "cyan",
@@ -56,6 +58,7 @@ function Leadership() {
     {
       id: 1,
       title: "Assistant Secretary",
+      organization: "Rotaract Club of UCSC",
       period: "2025 - 2026",
       description: "As a Assistant Secretary of the Rotaract Club of UCSC, I have gained valuable experience in event organization, management & event coordination as well as reporting.",
       color: "orange",
@@ -63,7 +66,8 @@ function Leadership() {
     },
     {
       id: 2,
-      title: "Faculty Coordinator - UCSC",
+      title: "Faculty Coordinator",
+      organization: "Leo Club of UOC",
       period: "2025 - 2026",
       description: "As a Faculty Coordinator of the Leo Club of UOC, I have gained valuable experience in team management, and how to manage instant situations",
       color: "magenta",
@@ -71,60 +75,63 @@ function Leadership() {
     },
     {
       id: 3,
-      title: "Member - Publicity Team",
+      title: "Publicity Team Member",
+      organization: "CSSL GenZ Chapter",
       period: "2025 - 2026",
-      description: "In CSSL Genz Chapter, I have good experience on working with people have better understand of how to hadle any kind of situation in any time where i need to involve. ",
+      description: "In CSSL Genz Chapter, I have good experience on working with people have better understand of how to hadle any kind of situation in any time where i need to involve.",
       color: "purple",
       icon: "member"
     },
     {
       id: 4,
-      title: "Member - Content Team",
-      period: "2024 - 202",
+      title: "Content Team Member",
+      organization: "ACM Student Chapter of UCSC",
+      period: "2024 - 2025",
       description: "In ACM Students' Branch UCSC, I improved my skills on giving better understand about an each event & make an excitement among the people.",
       color: "teal",
       icon: "member"
     },
     {
       id: 5,
-      title: "Member - Public Relations ",
+      title: "Public Relations Member",
+      organization: "Rotaract Club of UCSC",
       period: "2024 - 2025",
       description: "As a public relation member, I Gained confidence when talking about your club projects to crowds or partners and grew a strong professional network by connecting with community leaders, and other Rotaract peers.",
       color: "lightgreen",
       icon: "member"
     }
-
   ]
 
   return (
     <section id="leadership">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h2>LEADERSHIP & VOLUNTEERING</h2>
+      <h2 className="section-header-title">LEADERSHIP & VOLUNTEERING</h2>
 
       <div className="leadership-timeline">
         {leadershipRoles.map((role) => (
           <div key={role.id} className={`timeline-item timeline-item-${role.color}`}>
-            {/* Connector line from node to main timeline */}
-            <div className="connector-line"></div>
+            <div className="connector-line-left"></div>
+            <div className="connector-line-right"></div>
 
-            {/* Colored node with icon */}
             <div className={`timeline-node node-${role.color}`}>
               <div className="node-icon">
                 {LeadershipIcons[role.icon as keyof typeof LeadershipIcons]}
               </div>
             </div>
 
-            {/* Text content */}
             <div className="timeline-content">
               <div className="content-header">
-                <h3>{role.title}</h3>
+                <div className="title-org-group">
+                  <h3>{role.title}</h3>
+                  <span className="organization-badge-inline">{role.organization}</span>
+                </div>
                 <span className="period">{role.period}</span>
               </div>
               <p className="description">{role.description}</p>
+            </div>
+
+            <div className="timeline-opposite-badge">
+              <span className="opposite-org">{role.organization}</span>
+              <span className="opposite-period">{role.period}</span>
             </div>
           </div>
         ))}
@@ -134,3 +141,4 @@ function Leadership() {
 }
 
 export default Leadership
+
