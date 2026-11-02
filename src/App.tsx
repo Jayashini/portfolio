@@ -47,7 +47,7 @@ function HomePage() {
             <div className="content">
               <span className="subtitle">HELLO & WELCOME</span>
               <h1>I'M <br /><span className="name-gradient">JAYASHINI JAYAWEERA</span></h1>
-              <p>A passionate Information Systems Undergraduate at University of Colombo School of Computing (UCSC), specializing in cybersecurity, full-stack software engineering, and database systems.</p>
+              <p>Information Systems undergraduate at the University of Colombo School of Computing (graduating 2027), with a strong interest in cybersecurity. I have hands-on experience designing role-based access control, applying ISO 27001-aligned policies in a data governance framework, and enjoying identifying security weaknesses</p>
               
               <div className="hero-cta-group">
                 <a 
